@@ -1,0 +1,7 @@
+logs/*
+!logs/.gitkeep
+*.log
+*.tmp
+*.swp
+*~
+.env

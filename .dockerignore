@@ -1,0 +1,22 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Logs and temporary/local files
+logs/
+*.log
+*.tmp
+*.swp
+*~
+tmp/
+.env
+.DS_Store
+
+# Not needed inside the image (only app/ is copied)
+README.md
+test.sh
+grade.sh
+compose.yaml
+Dockerfile
+.dockerignore
