@@ -1,0 +1,12 @@
+services:
+  diagnostic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: diagnostic-tool
+    # Default argument; override it when running, e.g.
+    #   docker compose run --rm diagnostic system
+    command: ["help"]
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
